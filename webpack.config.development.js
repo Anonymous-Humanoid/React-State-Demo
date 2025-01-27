@@ -54,7 +54,7 @@ let config = {
     module: {
         rules: [
             {
-                test: /\.(css|scss|sass)$/,
+                test: /\.css$/,
                 use: [
                     {
                         loader: 'style-loader'

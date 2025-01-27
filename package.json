@@ -1,12 +1,12 @@
 {
     "name": "react-state-test",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
         "start": "nodemon --config nodemon.development.json webserver.js",
         "prettier": "prettier --write '**/*.{js,jsx,ts,tsx,json,css,scss,md}'"
     },
-    "author": "Anonymous Humanoid",
+    "author": "Anonymous-Humanoid",
     "license": "MIT",
     "private": true,
     "description": "A simple demo illustrating the usage of states and the principle of lifting state up with React 5.",
