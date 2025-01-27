@@ -1,0 +1,17 @@
+{
+    "extends": "react-app",
+    "globals": {
+        "chrome": "readonly"
+    },
+    // TODO Deprecated rules, see: https://eslint.org/docs/latest/rules/no-extra-semi and https://eslint.style/packages/default
+    "rules": {
+        "semi": ["error", "always"],
+        "no-extra-semi": ["error", "always"]
+        /* TODO Can we force semicolons in interfaces? I.e:
+        interface Test {
+            a: string;
+            b: number;
+        }
+        */
+    }
+}

@@ -1,0 +1,31 @@
+* {
+    font-family: Consolas, 'Courier New', monospace;
+    font-size: 12px;
+}
+
+:root {
+    color-scheme: dark;
+}
+
+body {
+    background-color: black;
+}
+
+.element {
+    display: block;
+}
+
+.children {
+    margin-left: 10px;
+}
+
+label {
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    & input,
+    & select {
+        display: block;
+    }
+}

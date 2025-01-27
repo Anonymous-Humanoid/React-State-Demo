@@ -1,0 +1,38 @@
+{
+    "name": "react-state-test",
+    "version": "1.0.0",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "nodemon --config nodemon.development.json webserver.js",
+        "prettier": "prettier --write '**/*.{js,jsx,ts,tsx,json,css,scss,md}'"
+    },
+    "author": "Anonymous Humanoid",
+    "license": "MIT",
+    "private": true,
+    "description": "A simple demo illustrating the usage of states and the principle of lifting state up with React 5.",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Anonymous-Humanoid/React-State-Demo.git"
+    },
+    "dependencies": {
+        "react": "^19.0.0",
+        "react-dom": "^19.0.0"
+    },
+    "devDependencies": {
+        "@types/react": "^19.0.8",
+        "@types/react-dom": "^19.0.3",
+        "babel-eslint": "^10.1.0",
+        "babel-loader": "^9.2.1",
+        "css-loader": "^7.1.2",
+        "html-loader": "^5.1.0",
+        "html-webpack-plugin": "^5.6.3",
+        "nodemon": "^3.1.9",
+        "prettier": "^3.4.2",
+        "source-map-loader": "^5.0.0",
+        "style-loader": "^4.0.0",
+        "ts-loader": "^9.5.2",
+        "typescript": "^5.7.3",
+        "webpack": "^5.97.1",
+        "webpack-dev-server": "^5.2.0"
+    }
+}

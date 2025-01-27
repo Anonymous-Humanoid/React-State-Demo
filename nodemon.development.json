@@ -1,0 +1,17 @@
+{
+    "verbose": true,
+    "watch": [
+        "./webpack.config.development.js",
+        "./webserver.js",
+        "./src/react-app-env.d.ts",
+        "./package.json",
+        "./tsconfig.json"
+    ],
+    "env": {
+        "NODE_ENV": "development",
+        "BABEL_ENV": "development",
+        "ASSET_PATH": "/",
+        "OUTPUT_DIR": "build"
+    },
+    "ext": "json,js,ts"
+}
