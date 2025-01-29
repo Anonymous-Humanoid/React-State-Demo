@@ -1,27 +1,32 @@
 import React, { useState } from 'react';
-import ChildManager, { ChildType, ChildMap, CHILD_TYPES } from './childManager';
-import TextInput from './textInput';
+import ChildManager, { CHILD_TYPES, ChildMap, ChildType } from './childManager';
 import SelectInput from './selectInput';
+import TextInput from './textInput';
 
 const ROOT_ID = 'root';
 
-export default function Test() {
+export default function App() {
     const newElements: ChildMap = {
         [ROOT_ID]: {
             type: 'html',
             children: new Array<string>()
         }
     };
-    const [elements, setElements] = useState(newElements);
-    const [id, setId] = useState('');
-    const [parentId, setParentId] = useState('');
-    const [type, setType] = useState('div' as ChildType);
+    const [elements, setElements] = useState<ChildMap>(newElements);
+    const [id, setId] = useState<string>('');
+    const [parentId, setParentId] = useState<string>('');
+    const [type, setType] = useState<ChildType>('div');
 
     let root = ROOT_ID;
 
     function addElement() {
         if (id in elements) {
             alert('Element already exists. Please choose a unique ID.');
+            return;
+        } else if (!(parentId in elements)) {
+            alert(
+                "Parent element doesn't exist. Please choose an existing ID."
+            );
             return;
         }
 

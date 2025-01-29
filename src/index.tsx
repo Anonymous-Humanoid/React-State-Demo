@@ -1,6 +1,6 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
-import Test from './app';
+import App from './app';
 
 // Loading page CSS
 import './index.css';
@@ -9,4 +9,4 @@ import './index.css';
 const container = document.getElementById('app-container')!;
 const root = createRoot(container);
 
-root.render(<Test />);
+root.render(<App />);
