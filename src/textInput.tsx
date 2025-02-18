@@ -6,7 +6,7 @@ interface TextInputProps {
     setValue: (value: string) => void;
 }
 
-export default function TextInput({ label, value, setValue }: TextInputProps) {
+export default function TextInput({ label, value, setValue }: Readonly<TextInputProps>) {
     function updateValue(e: ChangeEvent<HTMLInputElement>) {
         e.preventDefault();
 
