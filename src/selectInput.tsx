@@ -12,7 +12,7 @@ export default function SelectInput<T extends string>({
     value,
     setValue,
     values
-}: SelectInputProps<T>) {
+}: Readonly<SelectInputProps<T>>) {
     function updateValue(e: ChangeEvent<HTMLSelectElement>) {
         e.preventDefault();
 
