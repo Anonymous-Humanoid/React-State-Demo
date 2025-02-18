@@ -16,7 +16,7 @@ interface ChildManagerProps {
     elements: ChildMap;
 }
 
-export default function ChildManager({ id, elements }: ChildManagerProps) {
+export default function ChildManager({ id, elements }: Readonly<ChildManagerProps>) {
     let current = elements[id];
 
     let type = current.type;
