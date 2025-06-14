@@ -1,17 +1,15 @@
-// Loading env vars from nodemon config
-const NODE_ENV = process.env.NODE_ENV;
-
-// Verifying node env
-if (NODE_ENV == null) {
-    throw 'Node environment must be specified';
-}
-
-// Setting env vars
-const OUTPUT_DIR = process.env.OUTPUT_DIR;
-
+const assert = require('node:assert');
 const webpack = require('webpack');
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+
+// Getting env vars from nodemon config
+const NODE_ENV = /** @type {'development' | 'production' | undefined} */ (process.env.NODE_ENV);
+const OUTPUT_DIR = /** @type {string} */ (process.env.OUTPUT_DIR);
+
+// Verifying node env
+assert.ok(NODE_ENV != null, 'Node environment must be specified');
+assert.ok(OUTPUT_DIR != null, 'Bundle output directory must be specified');
 
 // Configuring webpack
 const FILE_EXTS = [
@@ -88,9 +86,6 @@ let config = {
                 use: [
                     {
                         loader: 'source-map-loader'
-                    },
-                    {
-                        loader: require.resolve('babel-loader')
                     }
                 ]
             }
