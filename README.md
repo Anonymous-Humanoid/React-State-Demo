@@ -31,7 +31,8 @@ state up with React 19.
   ESlint, markdownlLint, webhint, webpack-dev-server, Nodemon, HTML, CSS and Prettier.
 - For JavaScript users not wanting to deal with TypeScript, use .js and .jsx instead
   of the .ts and .tsx file extensions used here. To migrate TS to JS, change the
-  file extensions and remove all the typings and interfaces from the code.
+  file extensions and remove all the typings and interfaces from the code,
+  or use JSDoc to retain type information.
 
 [license-image]: https://img.shields.io/npm/l/markdownlint.svg
 [license-url]: https://opensource.org/licenses/MIT
