@@ -13,7 +13,7 @@ state up with React 19.
 - Run `npm i` to install the necessary dependencies
 - Run `npm start` to run a server to create and populate the `/build` folder.
   Feel free to terminate this program when it's generated the files.
-- Open `/build/index.html` in your browser (tested on DuckDuckGo)
+- Open `/build/index.html` in your browser (tested on Chromium and Firefox)
 
 ## About the project
 
