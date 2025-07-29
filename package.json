@@ -15,7 +15,7 @@
         "url": "https://github.com/Anonymous-Humanoid/React-State-Demo.git"
     },
     "dependencies": {
-        "react": "^19.1.0",
+        "react": "^19.1.1",
         "react-dom": "^19.1.0"
     },
     "devDependencies": {
